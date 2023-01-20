@@ -3,6 +3,7 @@ import AppHeader from './components/AppHeader.vue';
 import AppMainUp from './components/AppMainUp.vue';
 import AppMainDown from './components/AppMainDown.vue';
 import AppFooterUp from './components/AppFooterUp.vue';
+import AppFooterDown from './components/AppFooterDown.vue';
 export default {
   name: "App",
   data() {
@@ -14,7 +15,8 @@ export default {
     AppHeader,
     AppMainUp,
     AppMainDown,
-    AppFooterUp
+    AppFooterUp,
+    AppFooterDown
   }
 };
 </script>
@@ -29,6 +31,7 @@ export default {
 
   <footer>
     <app-footer-up></app-footer-up>
+    <app-footer-down></app-footer-down>
   </footer>
 
 </template>

@@ -85,7 +85,6 @@ export default {
         .col {
             width: 50%;
             height: 100%;
-            border: 1px dashed #fff;
             display: flex;
 
             figure {
@@ -103,7 +102,6 @@ export default {
             .col-3 {
                 width: calc(100% / 3);
                 height: 100%;
-                border: 1px dashed #fff;
 
                 h3 {
                     margin: 13px 0;
