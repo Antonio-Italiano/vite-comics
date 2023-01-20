@@ -91,7 +91,6 @@ export default {
 <style lang="scss" scoped>
 header {
     height: calc(100vh/6);
-    border: 1px dashed black;
 
     .row {
         display: flex;
@@ -119,7 +118,7 @@ header {
                     height: 100%;
 
                     li {
-                        padding: 2px 10px;
+                        padding: 0 10px;
                         height: 100%;
                         display: flex;
                         align-items: center;

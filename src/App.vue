@@ -1,5 +1,6 @@
 <script>
 import AppHeader from './components/AppHeader.vue';
+import AppMainUp from './components/AppMainUp.vue';
 export default {
   name: "App",
   data() {
@@ -8,7 +9,8 @@ export default {
     }
   },
   components: {
-    AppHeader
+    AppHeader,
+    AppMainUp
   }
 };
 </script>
@@ -16,7 +18,9 @@ export default {
 <template>
 
   <app-header></app-header>
-  <main></main>
+  <main>
+    <app-main-up></app-main-up>
+  </main>
   <footer></footer>
 
 </template>
