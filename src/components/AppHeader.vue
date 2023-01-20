@@ -126,9 +126,7 @@ header {
 
                     a {
                         font-size: 12px;
-                        list-style-type: none;
                         color: black;
-                        text-decoration: none;
                         height: 100%;
                         display: flex;
                         align-items: center;

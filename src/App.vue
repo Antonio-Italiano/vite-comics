@@ -1,6 +1,8 @@
 <script>
 import AppHeader from './components/AppHeader.vue';
 import AppMainUp from './components/AppMainUp.vue';
+import AppMainDown from './components/AppMainDown.vue';
+import AppFooterUp from './components/AppFooterUp.vue';
 export default {
   name: "App",
   data() {
@@ -10,7 +12,9 @@ export default {
   },
   components: {
     AppHeader,
-    AppMainUp
+    AppMainUp,
+    AppMainDown,
+    AppFooterUp
   }
 };
 </script>
@@ -20,8 +24,12 @@ export default {
   <app-header></app-header>
   <main>
     <app-main-up></app-main-up>
+    <app-main-down></app-main-down>
   </main>
-  <footer></footer>
+
+  <footer>
+    <app-footer-up></app-footer-up>
+  </footer>
 
 </template>
 
@@ -35,6 +43,10 @@ export default {
 // GENERICS
 li {
   list-style-type: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 // UTILITY
