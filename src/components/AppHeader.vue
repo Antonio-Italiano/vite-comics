@@ -71,13 +71,15 @@ export default {
     <header>
         <div class="row container">
             <div class="col-40">
-                <img src="../assets/img/dc-logo.png" alt="logo-dc">
+                <a href="#">
+                    <img src="../assets/img/dc-logo.png" alt="logo-dc">
+                </a>
             </div>
             <div class="col-60">
                 <nav>
                     <ul>
                         <li v-for="(d, i) in data" :key="d.text">
-                            <a href="#" :class="{ 'cliched': currentIndex === i }" @click="setCurrentIndex(i)">{{
+                            <a :href="d.url" :class="{ 'cliched': currentIndex === i }" @click="setCurrentIndex(i)">{{
                                 d.text.toUpperCase()
                             }}</a>
                         </li>
@@ -93,16 +95,22 @@ header {
     height: calc(100vh/6);
 
     .row {
+        height: 100%;
         display: flex;
 
         .col-40 {
             width: 40%;
             padding: 10px 0;
-            display: flex;
-            align-items: center;
 
-            img {
-                height: 70%;
+            a {
+                display: flex;
+                align-items: center;
+                height: 100%;
+                width: 21%;
+
+                img {
+                    height: 70%;
+                }
             }
         }
 

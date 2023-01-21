@@ -74,12 +74,13 @@ export default {
             }
 
             button {
-                padding: 10px;
-                border: 2px solid #0282F9;
                 background-color: transparent;
+                border: 0;
 
                 a {
                     color: #fff;
+                    padding: 10px;
+                    border: 2px solid #0282F9;
                 }
             }
         }
