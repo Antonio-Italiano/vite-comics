@@ -112,7 +112,7 @@ export default {
 
   <app-header></app-header>
   <main>
-    <app-main-up></app-main-up>
+    <app-main-up :cards="cards"></app-main-up>
     <app-main-down></app-main-down>
   </main>
 
