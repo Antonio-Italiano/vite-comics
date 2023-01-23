@@ -49,6 +49,10 @@ export default {
             height: 150px;
             width: calc(100%/6);
             margin-bottom: 60px;
+
+            &.col-card:hover {
+                scale: 1.1;
+            }
         }
 
     }

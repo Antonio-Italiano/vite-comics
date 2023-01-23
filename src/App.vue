@@ -140,6 +140,11 @@ li {
 
 a {
   text-decoration: none;
+
+}
+
+button:hover {
+  scale: 1.1;
 }
 
 // UTILITY
