@@ -4,6 +4,7 @@ import AppMainUp from './components/AppMainUp.vue';
 import AppMainDown from './components/AppMainDown.vue';
 import AppFooterUp from './components/AppFooterUp.vue';
 import AppFooterDown from './components/AppFooterDown.vue';
+import AppJumbotron from './components/AppJumbotron.vue';
 export default {
   name: "App",
   data() {
@@ -103,7 +104,8 @@ export default {
     AppMainUp,
     AppMainDown,
     AppFooterUp,
-    AppFooterDown
+    AppFooterDown,
+    AppJumbotron
   }
 };
 </script>
@@ -112,6 +114,7 @@ export default {
 
   <app-header></app-header>
   <main>
+    <app-jumbotron></app-jumbotron>
     <app-main-up :cards="cards"></app-main-up>
     <app-main-down></app-main-down>
   </main>
